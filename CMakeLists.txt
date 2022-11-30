@@ -14,7 +14,7 @@ FetchContent_MakeAvailable(googletest)
 add_executable(07_ray_tracer_challenge main.cpp)
 
 # test
-add_executable(tests tuple_test.cpp)
+add_executable(tests tuple_test.cpp tuple.h)
 target_link_libraries(tests GTest::gtest_main)
 
 include(GoogleTest)
